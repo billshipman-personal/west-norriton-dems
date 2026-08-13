@@ -190,6 +190,14 @@ img   { max-width: 100%; display: block; }
   letter-spacing: -0.025em;
   margin-bottom: 1.5rem;
 }
+.hero-sub {
+  font-family: var(--font-d);
+  font-style: italic;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: rgba(255,255,255,0.5);
+  letter-spacing: -0.01em;
+  margin-bottom: 1rem;
+}
 .hero-body {
   font-size: clamp(1rem, 1.5vw, 1.125rem);
   color: rgba(255,255,255,0.72);
@@ -204,6 +212,26 @@ img   { max-width: 100%; display: block; }
 .section-light { background: var(--light); padding: clamp(4rem, 8vh, 6rem) 0; }
 .section-navy  { background: var(--navy);  padding: clamp(4rem, 8vh, 6rem) 0; color: var(--white); }
 .section-red   { background: var(--red);   padding: clamp(4rem, 8vh, 6rem) 0; color: var(--white); }
+
+/* ── Community / Map ─────────────────────────────────── */
+.community-section { padding: clamp(4rem, 8vh, 6rem) 0; }
+.community-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
+}
+.community-body {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+.community-links { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+
+.community-map { display: flex; flex-direction: column; align-items: center; gap: 0.75rem; }
+.community-map svg { width: 100%; max-width: 480px; height: auto; filter: drop-shadow(0 0 24px rgba(0,0,0,0.4)); }
+.map-caption { font-size: 0.72rem; color: rgba(255,255,255,0.28); letter-spacing: 0.1em; text-transform: uppercase; text-align: center; }
 
 /* ── About ───────────────────────────────────────────── */
 .about-grid {
@@ -491,7 +519,8 @@ img   { max-width: 100%; display: block; }
   .nav-menu a:last-child { border-bottom: none; }
   .nav-donate { border-radius: 0; background: none !important; color: var(--red) !important; padding: 0.6rem 0; font-weight: 700 !important; }
   .nav-donate:hover { background: none !important; }
-  .contact-grid { grid-template-columns: 1fr; }
+  .contact-grid    { grid-template-columns: 1fr; }
+  .community-inner { grid-template-columns: 1fr; }
   .about-grid   { grid-template-columns: 1fr; }
   .about-grid   { grid-template-rows: auto auto; }
   .about-logo   { order: -1; }

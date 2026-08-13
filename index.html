@@ -37,7 +37,8 @@
     <div class="hero-inner">
       <div class="hero-headline">
         <p class="eyebrow">West Norriton Township · Montgomery County, PA</p>
-        <h1>Fighting for<br>West Norriton<span class="accent">.</span></h1>
+        <h1>Strong Roots.<br>Bright Future<span class="accent">.</span></h1>
+        <p class="hero-sub">Fighting for West Norriton.</p>
         <p class="hero-body">
           Your neighbors. Your community. Your voice. The West Norriton Democratic
           Committee organizes, advocates, and works to elect leaders who put
@@ -50,6 +51,78 @@
       </div>
     </div>
     <div class="hero-bar"></div>
+  </section>
+
+  <!-- COMMUNITY / MAP -->
+  <section id="community" class="section-navy community-section">
+    <div class="container community-inner">
+      <div class="community-text">
+        <p class="eyebrow muted reveal">Your Community</p>
+        <h2 class="section-title light reveal">Your Democrats<br>in West Norriton<span class="accent">.</span></h2>
+        <p class="community-body reveal">We're neighbors organizing in West Norriton to elect Democratic candidates, help residents vote, and build a stronger community in Montgomery County.</p>
+        <div class="community-links reveal">
+          <a href="#about" class="btn btn-outline">Meet the Committee</a>
+          <a href="#voting" class="btn btn-outline">Voting Information</a>
+        </div>
+      </div>
+      <div class="community-map reveal" aria-hidden="true">
+        <svg viewBox="0 0 520 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Stylized map of Montgomery County, PA with West Norriton Township highlighted">
+          <defs>
+            <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
+              <path d="M 38 0 L 0 0 0 38" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="0.8"/>
+            </pattern>
+            <clipPath id="county">
+              <path d="M 68,40 L 185,22 L 310,16 L 420,26 L 492,68 L 510,155 L 506,242 L 488,318 L 418,370 L 312,390 L 202,387 L 106,352 L 50,282 L 36,192 L 46,108 Z"/>
+            </clipPath>
+          </defs>
+
+          <!-- County fill -->
+          <path d="M 68,40 L 185,22 L 310,16 L 420,26 L 492,68 L 510,155 L 506,242 L 488,318 L 418,370 L 312,390 L 202,387 L 106,352 L 50,282 L 36,192 L 46,108 Z"
+                fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
+
+          <!-- Subtle grid inside county -->
+          <rect x="0" y="0" width="520" height="420" fill="url(#grid)" clip-path="url(#county)"/>
+
+          <!-- Municipality division lines -->
+          <g stroke="rgba(255,255,255,0.07)" stroke-width="0.8" clip-path="url(#county)">
+            <line x1="155" y1="18" x2="108" y2="390"/>
+            <line x1="248" y1="16" x2="215" y2="390"/>
+            <line x1="348" y1="18" x2="340" y2="390"/>
+            <line x1="435" y1="28" x2="448" y2="368"/>
+            <line x1="36" y1="118" x2="510" y2="118"/>
+            <line x1="36" y1="208" x2="508" y2="208"/>
+            <line x1="44" y1="298" x2="492" y2="298"/>
+          </g>
+
+          <!-- Neighboring municipalities — faint outline only -->
+          <!-- Norristown Borough (just east of West Norriton) -->
+          <path d="M 285,286 L 318,280 L 328,308 L 320,342 L 285,346 L 278,318 Z"
+                fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+
+          <!-- West Norriton — highlighted red -->
+          <path d="M 222,292 L 272,284 L 285,286 L 278,318 L 285,346 L 245,354 L 218,332 Z"
+                fill="rgba(200,16,46,0.8)" stroke="rgba(255,255,255,0.85)" stroke-width="2"/>
+
+          <!-- West Norriton label -->
+          <text x="248" y="318" text-anchor="middle" font-family="Georgia, serif" font-size="9.5" fill="white" font-weight="bold" letter-spacing="0.5">WEST</text>
+          <text x="248" y="330" text-anchor="middle" font-family="Georgia, serif" font-size="9.5" fill="white" font-weight="bold" letter-spacing="0.5">NORRITON</text>
+
+          <!-- Norristown dot + label -->
+          <circle cx="305" cy="278" r="3.5" fill="rgba(255,255,255,0.7)"/>
+          <text x="316" y="276" font-family="Georgia, serif" font-size="8.5" fill="rgba(255,255,255,0.5)">Norristown</text>
+
+          <!-- County header text -->
+          <text x="275" y="68" text-anchor="middle" font-family="Georgia, serif" font-size="12" fill="rgba(255,255,255,0.22)" letter-spacing="3">MONTGOMERY COUNTY</text>
+          <text x="275" y="85" text-anchor="middle" font-family="Georgia, serif" font-size="10" fill="rgba(255,255,255,0.16)" letter-spacing="2">PENNSYLVANIA</text>
+
+          <!-- Compass N indicator -->
+          <text x="476" y="105" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="rgba(255,255,255,0.18)" font-weight="bold">N</text>
+          <line x1="476" y1="88" x2="476" y2="110" stroke="rgba(255,255,255,0.15)" stroke-width="1"/>
+          <polygon points="476,80 472,91 476,88 480,91" fill="rgba(255,255,255,0.18)"/>
+        </svg>
+        <p class="map-caption">West Norriton Township, Montgomery County, PA</p>
+      </div>
+    </div>
   </section>
 
   <!-- ABOUT -->
