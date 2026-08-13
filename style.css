@@ -265,7 +265,9 @@ img   { max-width: 100%; display: block; }
 }
 .footer-brand  { font-family: var(--font-d); font-weight: 700; color: var(--white); font-size: 1rem; margin-bottom: 0.6rem; }
 .footer-legal  { font-size: 0.72rem; color: rgba(255,255,255,0.38); max-width: 480px; margin: 0 auto 0.5rem; line-height: 1.55; }
-.footer-copy   { font-size: 0.72rem; color: rgba(255,255,255,0.25); }
+.footer-copy        { font-size: 0.72rem; color: rgba(255,255,255,0.25); }
+.footer-copy a      { color: rgba(255,255,255,0.35); text-decoration: underline; }
+.footer-copy a:hover { color: rgba(255,255,255,0.6); }
 
 /* ── Responsive ──────────────────────────────────────── */
 @media (max-width: 720px) {
