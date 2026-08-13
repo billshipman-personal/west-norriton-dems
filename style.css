@@ -115,7 +115,7 @@ img   { max-width: 100%; display: block; }
 /* ── Hero ────────────────────────────────────────────── */
 .hero {
   background: var(--navy);
-  min-height: 84vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -142,8 +142,8 @@ img   { max-width: 100%; display: block; }
 }
 
 .hero-inner {
-  padding: clamp(4rem, 10vh, 7rem) clamp(1.25rem, 5vw, 3rem)
-           clamp(4rem, 10vh, 7rem) clamp(2rem, 8vw, 7rem);
+  padding: clamp(2.5rem, 6vh, 4rem) clamp(1.25rem, 5vw, 3rem)
+           clamp(2.5rem, 6vh, 4rem) clamp(2rem, 8vw, 7rem);
 }
 .hero-headline { max-width: 640px; }
 
