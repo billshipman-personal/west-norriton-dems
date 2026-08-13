@@ -1,3 +1,20 @@
+const SUPABASE_URL = 'https://edjtiftrsepkpxosdpwn.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVkanRpZnRyc2Vwa3B4b3NkcHduIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODUzODg2MjYsImV4cCI6MjEwMDk2NDYyNn0.x390dDUZQDRoTh5FAwPINtsCE7DE7ZDXxWdZDWukuy0';
+
+async function supabaseInsert(table, data) {
+  const res = await fetch(`${SUPABASE_URL}/rest/v1/${table}`, {
+    method: 'POST',
+    headers: {
+      'apikey': SUPABASE_ANON_KEY,
+      'Authorization': `Bearer ${SUPABASE_ANON_KEY}`,
+      'Content-Type': 'application/json',
+      'Prefer': 'return=minimal',
+    },
+    body: JSON.stringify(data),
+  });
+  if (!res.ok) throw new Error(`Insert failed: ${res.status}`);
+}
+
 // Nav active state on scroll
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav nav a[href^="#"]');
@@ -18,36 +35,45 @@ const sectionObserver = new IntersectionObserver(
 
 sections.forEach(s => sectionObserver.observe(s));
 
-// Form submission via fetch (Formspree)
-document.querySelectorAll('form').forEach(form => {
-  form.addEventListener('submit', async e => {
-    e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    const original = btn.textContent;
+// Signup form
+document.querySelector('.signup-form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const form = e.target;
+  const btn = form.querySelector('button[type="submit"]');
+  btn.textContent = 'Signing up…';
+  btn.disabled = true;
+  try {
+    await supabaseInsert('wnd_signups', {
+      name: form.name.value.trim(),
+      email: form.email.value.trim(),
+    });
+    btn.textContent = '✓ You\'re on the list!';
+    form.reset();
+    setTimeout(() => { btn.textContent = 'Sign Up'; btn.disabled = false; }, 4000);
+  } catch {
+    btn.textContent = 'Something went wrong — try again';
+    btn.disabled = false;
+  }
+});
 
-    btn.textContent = 'Sending…';
-    btn.disabled = true;
-
-    try {
-      const res = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { Accept: 'application/json' },
-      });
-
-      if (res.ok) {
-        btn.textContent = '✓ Done!';
-        form.reset();
-        setTimeout(() => {
-          btn.textContent = original;
-          btn.disabled = false;
-        }, 3500);
-      } else {
-        throw new Error('server');
-      }
-    } catch {
-      btn.textContent = 'Something went wrong — try again';
-      btn.disabled = false;
-    }
-  });
+// Contact form
+document.querySelector('.contact-form').addEventListener('submit', async e => {
+  e.preventDefault();
+  const form = e.target;
+  const btn = form.querySelector('button[type="submit"]');
+  btn.textContent = 'Sending…';
+  btn.disabled = true;
+  try {
+    await supabaseInsert('wnd_messages', {
+      name: form.name.value.trim(),
+      email: form.email.value.trim(),
+      message: form.message.value.trim(),
+    });
+    btn.textContent = '✓ Message sent!';
+    form.reset();
+    setTimeout(() => { btn.textContent = 'Send Message'; btn.disabled = false; }, 4000);
+  } catch {
+    btn.textContent = 'Something went wrong — try again';
+    btn.disabled = false;
+  }
 });
