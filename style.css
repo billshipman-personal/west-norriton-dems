@@ -96,14 +96,8 @@ img   { max-width: 100%; display: block; }
   justify-content: space-between;
   gap: 1rem;
 }
-.nav-brand {
-  font-family: var(--font-d);
-  font-weight: 700;
-  font-size: 0.95rem;
-  line-height: 1.25;
-  color: var(--navy);
-}
-.nav-brand span { font-weight: 400; font-size: 0.78rem; color: var(--muted); }
+.nav-brand { display: flex; align-items: center; }
+.nav-logo  { height: 40px; width: auto; display: block; }
 .nav nav        { display: flex; align-items: center; gap: 1.75rem; }
 .nav nav a      { font-size: 0.875rem; font-weight: 500; color: var(--navy); transition: color 0.15s; }
 .nav nav a:hover { color: var(--red); }
@@ -131,7 +125,7 @@ img   { max-width: 100%; display: block; }
 
 /* Watermark — the signature element */
 .hero::before {
-  content: 'NORRITON';
+  content: 'WEST NORRITON';
   position: absolute;
   right: -0.05em;
   bottom: -0.12em;
@@ -142,6 +136,7 @@ img   { max-width: 100%; display: block; }
   letter-spacing: -0.03em;
   line-height: 1;
   pointer-events: none;
+  -webkit-user-select: none;
   user-select: none;
   white-space: nowrap;
 }
