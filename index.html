@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>West Norriton Democratic Committee</title>
+  <meta name="description" content="The West Norriton Democratic Committee — organizing residents and electing leaders who put our community first in Montgomery County, PA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-brand">
+        West Norriton<br>
+        <span>Democratic Committee</span>
+      </a>
+      <nav aria-label="Main">
+        <a href="#get-involved">Get Involved</a>
+        <a href="#contact">Contact</a>
+        <a href="https://secure.actblue.com" target="_blank" rel="noopener" class="nav-donate">Donate</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-headline">
+        <p class="eyebrow">West Norriton Township · Montgomery County, PA</p>
+        <h1>Fighting for<br>West Norriton<span class="accent">.</span></h1>
+        <p class="hero-body">
+          Your neighbors. Your community. Your voice. The West Norriton Democratic
+          Committee organizes, advocates, and works to elect leaders who put
+          residents first.
+        </p>
+        <div class="hero-ctas">
+          <a href="#get-involved" class="btn btn-primary">Get Involved</a>
+          <a href="#contact" class="btn btn-outline">Contact Us</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-bar"></div>
+  </section>
+
+  <!-- GET INVOLVED -->
+  <section id="get-involved" class="section-white">
+    <div class="container">
+      <p class="eyebrow red">Join Us</p>
+      <h2 class="section-title">There's a place<br>for you here<span class="accent">.</span></h2>
+      <div class="cards">
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">📅</div>
+          <h3>Attend a Meeting</h3>
+          <p>We meet monthly at the West Norriton Township Building. All residents are
+          welcome — no experience required, just a willingness to show up.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">🤝</div>
+          <h3>Volunteer</h3>
+          <p>Knock doors, make calls, staff events, or help with outreach. Every hour
+          matters in local races — this is where elections are won or lost.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon" aria-hidden="true">💙</div>
+          <h3>Give</h3>
+          <p>Local races are decided on small margins. Your contribution funds mailers,
+          yard signs, and the organizing that makes the difference in November.</p>
+          <a href="https://secure.actblue.com" target="_blank" rel="noopener" class="card-link">Give on ActBlue →</a>
+        </div>
+      </div>
+
+      <div class="signup-block">
+        <div class="signup-text">
+          <h3>Stay in the loop<span class="accent">.</span></h3>
+          <p>Meeting reminders, volunteer opportunities, and election updates —
+          delivered to your inbox.</p>
+        </div>
+        <form class="signup-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="text" name="name" placeholder="Your name" required autocomplete="name">
+          <input type="email" name="email" placeholder="Email address" required autocomplete="email">
+          <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section-navy">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="eyebrow muted">Get in Touch</p>
+        <h2 class="section-title light">We'd love to<br>hear from you<span class="accent">.</span></h2>
+        <div class="contact-details">
+          <div class="contact-item">
+            <p class="contact-label">Meetings</p>
+            <p>Monthly at the West Norriton Township Building<br>
+            1630 W Marshall St, Norristown, PA 19403</p>
+          </div>
+          <div class="contact-item">
+            <p class="contact-label">Email</p>
+            <p><a href="mailto:info@westnorritondemocrats.com">info@westnorritondemocrats.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form-wrap">
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <label for="c-name" class="sr-only">Your name</label>
+          <input id="c-name" type="text" name="name" placeholder="Your name" required autocomplete="name">
+          <label for="c-email" class="sr-only">Email address</label>
+          <input id="c-email" type="email" name="email" placeholder="Email address" required autocomplete="email">
+          <label for="c-msg" class="sr-only">Message</label>
+          <textarea id="c-msg" name="message" placeholder="Your message" rows="5" required></textarea>
+          <button type="submit" class="btn btn-primary full-width">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-brand">West Norriton Democratic Committee</p>
+      <p class="footer-legal">
+        Paid for by the West Norriton Democratic Committee.<br>
+        Not authorized by any candidate or candidate's committee.
+      </p>
+      <p class="footer-copy">&copy; 2026 West Norriton Democratic Committee</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
