@@ -112,6 +112,19 @@ img   { max-width: 100%; display: block; }
 }
 .nav-donate:hover { background: var(--red-dark); color: var(--white); }
 
+/* ── Masthead ────────────────────────────────────────── */
+.masthead {
+  background: var(--white);
+  padding: 2rem clamp(1.25rem, 5vw, 3rem);
+  text-align: center;
+  border-bottom: 4px solid var(--red);
+}
+.masthead img {
+  max-width: 640px;
+  width: 100%;
+  height: auto;
+}
+
 /* ── Hero ────────────────────────────────────────────── */
 .hero {
   background: var(--navy);
