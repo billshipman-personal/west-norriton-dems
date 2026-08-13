@@ -43,9 +43,10 @@ document.querySelector('.signup-form').addEventListener('submit', async e => {
   btn.textContent = 'Signing up…';
   btn.disabled = true;
   try {
+    const data = new FormData(form);
     await supabaseInsert('wnd_signups', {
-      name: form.name.value.trim(),
-      email: form.email.value.trim(),
+      name: data.get('name').trim(),
+      email: data.get('email').trim(),
     });
     btn.textContent = '✓ You\'re on the list!';
     form.reset();
@@ -64,10 +65,11 @@ document.querySelector('.contact-form').addEventListener('submit', async e => {
   btn.textContent = 'Sending…';
   btn.disabled = true;
   try {
+    const data = new FormData(form);
     await supabaseInsert('wnd_messages', {
-      name: form.name.value.trim(),
-      email: form.email.value.trim(),
-      message: form.message.value.trim(),
+      name: data.get('name').trim(),
+      email: data.get('email').trim(),
+      message: data.get('message').trim(),
     });
     btn.textContent = '✓ Message sent!';
     form.reset();
