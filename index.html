@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>West Norriton Democratic Committee</title>
-  <meta name="description" content="The West Norriton Democratic Committee — organizing residents and electing leaders who put our community first in Montgomery County, PA.">
+  <meta name="description" content="The West Norriton Democratic Committee — your neighbors working to elect Democratic leaders and strengthen our community in Montgomery County, PA.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -18,7 +18,13 @@
       <a href="#home" class="nav-brand">
         West Norriton<br><span>Democratic Committee</span>
       </a>
-      <nav aria-label="Main">
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav aria-label="Main" class="nav-menu">
+        <a href="#about">About</a>
+        <a href="#voting">Voting</a>
+        <a href="#events">Events</a>
         <a href="#get-involved">Get Involved</a>
         <a href="#contact">Contact</a>
         <a href="https://secure.actblue.com/donate/west-norriton-democrats-1" target="_blank" rel="noopener" class="nav-donate">Donate</a>
@@ -44,11 +50,92 @@
         </p>
         <div class="hero-ctas">
           <a href="#get-involved" class="btn btn-primary">Get Involved</a>
-          <a href="#contact" class="btn btn-outline">Contact Us</a>
+          <a href="#voting" class="btn btn-outline">Vote in West Norriton</a>
         </div>
       </div>
     </div>
     <div class="hero-bar"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section-white">
+    <div class="container">
+      <p class="eyebrow red reveal">Who We Are</p>
+      <h2 class="section-title reveal">Your Democratic neighbors<br>in West Norriton<span class="accent">.</span></h2>
+      <div class="about-grid reveal">
+        <div class="about-text">
+          <p>The West Norriton Democratic Committee is made up of residents who live, work, and raise families right here in the township. We're not a distant organization — we're your neighbors, and we're committed to local government that works for everyone.</p>
+          <p>We recruit and support Democratic candidates for local office, register voters, organize volunteers, and work year-round to make West Norriton a place where every resident can thrive.</p>
+          <p>Want to meet us? We hold monthly meetings at the West Norriton Township Building. All residents are welcome — no experience or party registration required.</p>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <p class="stat-num">2</p>
+            <p class="stat-label">Democratic Commissioners</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num">Montgomery<br>County</p>
+            <p class="stat-label">Proudly Democratic</p>
+          </div>
+          <div class="stat">
+            <p class="stat-num">2026</p>
+            <p class="stat-label">Next Election Year</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ISSUES -->
+  <section id="issues" class="section-light">
+    <div class="container">
+      <p class="eyebrow red reveal">Our Focus</p>
+      <h2 class="section-title reveal">Focused on West Norriton<span class="accent">.</span></h2>
+      <div class="issues-grid">
+        <div class="issue reveal">
+          <div class="issue-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Responsible Local Government</h3>
+          <p>Transparent decisions, accountable leadership, and fiscal responsibility that serves every resident.</p>
+        </div>
+        <div class="issue reveal">
+          <div class="issue-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Strong Community</h3>
+          <p>Parks, recreation, and quality-of-life investments that make West Norriton a great place to live.</p>
+        </div>
+        <div class="issue reveal">
+          <div class="issue-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Safe Neighborhoods</h3>
+          <p>Supporting public safety with the resources, training, and community partnerships our officers need.</p>
+        </div>
+        <div class="issue reveal">
+          <div class="issue-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Roads &amp; Infrastructure</h3>
+          <p>Modern roads, sidewalks, and utilities that keep our township moving and our residents safe.</p>
+        </div>
+        <div class="issue reveal">
+          <div class="issue-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+          </div>
+          <h3>Strong Public Schools</h3>
+          <p>Supporting Norristown Area School District with the funding and leadership every student deserves.</p>
+        </div>
+        <div class="issue reveal">
+          <div class="issue-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+          </div>
+          <h3>Smart Economic Growth</h3>
+          <p>Attracting good jobs and responsible development that grows our tax base without sacrificing our character.</p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- GET INVOLVED -->
@@ -58,40 +145,152 @@
       <h2 class="section-title reveal">There's a place<br>for you here<span class="accent">.</span></h2>
       <div class="cards">
         <div class="card reveal">
-          <div class="card-icon" aria-hidden="true">📅</div>
+          <div class="card-icon-svg" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
           <h3>Attend a Meeting</h3>
-          <p>We meet monthly at the West Norriton Township Building. All residents are
-          welcome — no experience required, just a willingness to show up.</p>
+          <p>We meet monthly at the West Norriton Township Building. All residents are welcome — no experience required.</p>
           <a href="https://mcdems.org/events/" target="_blank" rel="noopener" class="card-link">MC Dems Events →</a>
           <a href="https://www.westnorritontwp.org/216/Board-of-Commissioners" target="_blank" rel="noopener" class="card-link">Board of Commissioners →</a>
         </div>
         <div class="card reveal">
-          <div class="card-icon" aria-hidden="true">🤝</div>
+          <div class="card-icon-svg" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
           <h3>Volunteer</h3>
-          <p>Knock doors, make calls, staff events, or help with outreach. Every hour
-          matters in local races — this is where elections are won or lost.</p>
+          <p>Knock doors, make calls, staff events, or help with outreach. Every hour matters in local races — this is where elections are won or lost.</p>
         </div>
         <div class="card reveal">
-          <div class="card-icon" aria-hidden="true">💙</div>
+          <div class="card-icon-svg" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
           <h3>Give</h3>
-          <p>Local races are decided on small margins. Your contribution funds mailers,
-          yard signs, and the organizing that makes the difference in November.</p>
+          <p>Local races are decided on small margins. Your contribution funds mailers, yard signs, and the organizing that makes the difference in November.</p>
           <a href="https://secure.actblue.com/donate/west-norriton-democrats-1" target="_blank" rel="noopener" class="card-link">Give on ActBlue →</a>
         </div>
       </div>
 
-      <div class="signup-block reveal">
-        <div class="signup-text">
-          <h3>Stay in the loop<span class="accent">.</span></h3>
-          <p>Meeting reminders, volunteer opportunities, and election updates —
-          delivered to your inbox.</p>
+      <!-- VOLUNTEER FORM -->
+      <div class="volunteer-block reveal">
+        <div class="volunteer-header">
+          <h3>How would you like to help<span class="accent">?</span></h3>
+          <p>Select everything that interests you and we'll be in touch.</p>
         </div>
-        <form class="signup-form">
-          <input type="text" name="name" placeholder="Your name" required autocomplete="name">
-          <input type="email" name="email" placeholder="Email address" required autocomplete="email">
-          <button type="submit" class="btn btn-primary">Sign Up</button>
+        <form class="volunteer-form">
+          <div class="volunteer-checks">
+            <label class="check-item"><input type="checkbox" name="interests" value="Knock doors"> <span>Knock doors</span></label>
+            <label class="check-item"><input type="checkbox" name="interests" value="Make calls or texts"> <span>Make calls or texts</span></label>
+            <label class="check-item"><input type="checkbox" name="interests" value="Deliver literature"> <span>Deliver literature</span></label>
+            <label class="check-item"><input type="checkbox" name="interests" value="Work the polls"> <span>Work the polls</span></label>
+            <label class="check-item"><input type="checkbox" name="interests" value="Host an event"> <span>Host an event</span></label>
+            <label class="check-item"><input type="checkbox" name="interests" value="Yard sign"> <span>Put up a yard sign</span></label>
+            <label class="check-item"><input type="checkbox" name="interests" value="Social media"> <span>Help with social media</span></label>
+            <label class="check-item"><input type="checkbox" name="interests" value="Become a committee person"> <span>Become a committee person</span></label>
+          </div>
+          <div class="volunteer-fields">
+            <input type="text" name="name" placeholder="Your name" required autocomplete="name">
+            <input type="email" name="email" placeholder="Email address" required autocomplete="email">
+            <button type="submit" class="btn btn-primary">I Want to Help</button>
+          </div>
         </form>
       </div>
+    </div>
+  </section>
+
+  <!-- VOTING -->
+  <section id="voting" class="section-navy">
+    <div class="container">
+      <p class="eyebrow muted reveal">Your Voice</p>
+      <h2 class="section-title light reveal">Vote in West Norriton<span class="accent">.</span></h2>
+      <div class="voting-grid">
+        <a href="https://www.pavoterservices.pa.gov/pages/VoterRegistrationApplication.aspx" target="_blank" rel="noopener" class="voting-card reveal">
+          <div class="voting-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          </div>
+          <h3>Register to Vote</h3>
+          <p>Not registered? Sign up online through the PA Voter Services portal.</p>
+          <span class="voting-link">Register now →</span>
+        </a>
+        <a href="https://www.pavoterservices.pa.gov/pages/VoterRegistrationStatus.aspx" target="_blank" rel="noopener" class="voting-card reveal">
+          <div class="voting-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>Check Your Registration</h3>
+          <p>Confirm your registration status and make sure your address is current.</p>
+          <span class="voting-link">Check status →</span>
+        </a>
+        <a href="https://www.pavoterservices.pa.gov/Pages/PollingPlaceInfo.aspx" target="_blank" rel="noopener" class="voting-card reveal">
+          <div class="voting-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Find Your Polling Place</h3>
+          <p>Look up your assigned polling location for Election Day in West Norriton.</p>
+          <span class="voting-link">Find location →</span>
+        </a>
+        <a href="https://www.pavoterservices.pa.gov/OnlineAbsenteeApplication/" target="_blank" rel="noopener" class="voting-card reveal">
+          <div class="voting-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <h3>Request a Mail Ballot</h3>
+          <p>Vote by mail — apply online and your ballot will be sent to your home.</p>
+          <span class="voting-link">Apply now →</span>
+        </a>
+        <a href="https://www.vote.pa.gov/Voting-in-PA/Pages/Election-Dates.aspx" target="_blank" rel="noopener" class="voting-card reveal">
+          <div class="voting-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3>Election Dates</h3>
+          <p>Stay on top of upcoming primary, municipal, and general election dates in Pennsylvania.</p>
+          <span class="voting-link">View dates →</span>
+        </a>
+        <a href="https://www.montcopa.org/283/Elections-Voter-Registration" target="_blank" rel="noopener" class="voting-card reveal">
+          <div class="voting-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Montgomery County Elections</h3>
+          <p>Official elections and voter registration information from Montgomery County.</p>
+          <span class="voting-link">Visit MontCo →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section id="events" class="section-light">
+    <div class="container">
+      <p class="eyebrow red reveal">What's Happening</p>
+      <h2 class="section-title reveal">Upcoming Events<span class="accent">.</span></h2>
+      <div class="events-list">
+        <div class="event-card reveal">
+          <div class="event-date">
+            <span class="event-month">TBD</span>
+            <span class="event-day">—</span>
+          </div>
+          <div class="event-info">
+            <h3>West Norriton Democratic Committee Meeting</h3>
+            <p class="event-meta">Monthly · West Norriton Township Building · 1630 W Marshall St, Norristown, PA 19403</p>
+            <p>All residents welcome. Agenda topics include local elections, community issues, and volunteer coordination. Check back for the next confirmed date.</p>
+          </div>
+        </div>
+      </div>
+      <p class="events-more reveal">
+        More events at <a href="https://mcdems.org/events/" target="_blank" rel="noopener">Montgomery County Democrats →</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section id="newsletter" class="section-red">
+    <div class="container newsletter-inner reveal">
+      <div class="newsletter-text">
+        <h2>Know what's happening<br>in West Norriton<span class="accent-light">.</span></h2>
+        <p>Local elections, meetings, volunteer opportunities, and community updates — delivered to your inbox.</p>
+      </div>
+      <form class="signup-form">
+        <input type="text" name="name" placeholder="Your name" required autocomplete="name">
+        <input type="email" name="email" placeholder="Email address" required autocomplete="email">
+        <button type="submit" class="btn btn-white">Keep Me Updated</button>
+      </form>
     </div>
   </section>
 
