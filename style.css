@@ -86,7 +86,16 @@ img   { max-width: 100%; display: block; }
   z-index: 100;
   background: var(--white);
   border-bottom: 1px solid var(--border);
+  transition: padding 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 }
+.nav.scrolled {
+  background: rgba(255,255,255,0.88);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 12px rgba(0,0,0,0.08);
+  border-bottom-color: transparent;
+}
+.nav.scrolled .nav-inner { padding-top: 0.5rem; padding-bottom: 0.5rem; }
 .nav-inner {
   max-width: var(--max-w);
   margin-inline: auto;
@@ -292,9 +301,21 @@ img   { max-width: 100%; display: block; }
   .hero-inner   { padding-left: clamp(1.25rem, 5vw, 3rem); }
 }
 
+/* ── Scroll reveal ───────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
   }
+  .reveal { opacity: 1; transform: none; }
 }

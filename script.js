@@ -15,6 +15,19 @@ async function supabaseInsert(table, data) {
   if (!res.ok) throw new Error(`Insert failed: ${res.status}`);
 }
 
+// Nav shrink on scroll
+const nav = document.querySelector('.nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 40);
+}, { passive: true });
+
+// Scroll reveal
+const revealObserver = new IntersectionObserver(
+  entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); } }),
+  { threshold: 0.15 }
+);
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
 // Nav active state on scroll
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav nav a[href^="#"]');
