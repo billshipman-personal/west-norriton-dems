@@ -148,15 +148,6 @@ img   { max-width: 100%; display: block; }
 .nav.open .nav-toggle span:nth-child(2) { opacity: 0; }
 .nav.open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
-/* ── Masthead ────────────────────────────────────────── */
-.masthead {
-  background: var(--white);
-  padding: 2.5rem clamp(1.25rem, 5vw, 3rem);
-  display: flex;
-  justify-content: center;
-  border-bottom: 4px solid var(--red);
-}
-.masthead img { max-width: 520px; width: 90%; height: auto; }
 
 /* ── Hero ────────────────────────────────────────────── */
 .hero {
@@ -217,27 +208,16 @@ img   { max-width: 100%; display: block; }
 /* ── About ───────────────────────────────────────────── */
 .about-grid {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: clamp(2rem, 5vw, 4rem);
-  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 6vw, 5rem);
+  align-items: center;
 }
 .about-text p { font-size: 1rem; color: var(--muted); line-height: 1.8; margin-bottom: 1rem; }
-.about-text p:last-child { margin-bottom: 0; }
-.about-stats { display: flex; flex-direction: column; gap: 1.5rem; }
-.stat {
-  background: var(--light);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 1.25rem 1.5rem;
-}
-.stat-num {
-  font-family: var(--font-d);
-  font-size: 1.65rem;
-  font-weight: 700;
-  color: var(--navy);
-  line-height: 1.15;
-}
-.stat-label { font-size: 0.78rem; color: var(--muted); margin-top: 0.2rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.about-actions { display: flex; align-items: center; gap: 1.5rem; margin-top: 1.75rem; flex-wrap: wrap; }
+.about-link { font-size: 0.9rem; font-weight: 600; color: var(--red); }
+.about-link:hover { text-decoration: underline; }
+.about-logo { display: flex; justify-content: center; align-items: center; }
+.about-logo img { max-width: 420px; width: 100%; height: auto; }
 
 /* ── Issues ──────────────────────────────────────────── */
 .issues-grid {
@@ -513,6 +493,9 @@ img   { max-width: 100%; display: block; }
   .nav-donate:hover { background: none !important; }
   .contact-grid { grid-template-columns: 1fr; }
   .about-grid   { grid-template-columns: 1fr; }
+  .about-grid   { grid-template-rows: auto auto; }
+  .about-logo   { order: -1; }
+  .about-logo img { max-width: 280px; }
   .newsletter-inner { flex-direction: column; gap: 1.5rem; }
   .hero-inner   { padding-left: clamp(1.25rem, 5vw, 3rem); }
   .event-card   { grid-template-columns: 1fr; gap: 1rem; }
