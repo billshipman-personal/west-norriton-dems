@@ -106,7 +106,9 @@ img   { max-width: 100%; display: block; }
   justify-content: space-between;
   gap: 1rem;
 }
-.nav-brand      { font-family: var(--font-d); font-weight: 700; font-size: 0.95rem; line-height: 1.25; color: var(--navy); }
+.nav-brand      { font-family: var(--font-d); font-weight: 700; font-size: 0.95rem; line-height: 1.25; color: var(--navy); display: flex; align-items: center; gap: 0.65rem; }
+.nav-badge      { height: 38px; width: auto; display: block; flex-shrink: 0; }
+.nav-brand-text { display: block; }
 .nav-brand span { font-weight: 400; font-size: 0.78rem; color: var(--muted); }
 .nav-menu        { display: flex; align-items: center; gap: 1.5rem; }
 .nav-menu a      { font-size: 0.875rem; font-weight: 500; color: var(--navy); transition: color 0.15s; }
