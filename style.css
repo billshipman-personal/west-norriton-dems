@@ -125,20 +125,20 @@ img   { max-width: 100%; display: block; }
 
 /* Watermark — the signature element */
 .hero::before {
-  content: 'WEST NORRITON';
+  content: 'WEST\ANORRITON';
   position: absolute;
   right: -0.05em;
-  bottom: -0.12em;
+  bottom: -0.08em;
   font-family: var(--font-d);
   font-weight: 700;
-  font-size: clamp(8rem, 22vw, 20rem);
+  font-size: clamp(6rem, 16vw, 14rem);
   color: rgba(255,255,255,0.05);
   letter-spacing: -0.03em;
-  line-height: 1;
+  line-height: 0.9;
   pointer-events: none;
   -webkit-user-select: none;
   user-select: none;
-  white-space: nowrap;
+  white-space: pre;
 }
 
 .hero-inner {
